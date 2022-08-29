@@ -1,5 +1,4 @@
-# My resume
-## Web resume
+# Web resume
 Used tools:
 - HTML
 - CSS
