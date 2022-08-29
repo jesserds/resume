@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Jesse Ribeiro</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/acordeon.css">
+    <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <img src="assets/img/my-photo.png" alt="Foto de Perfil" class="photo" id="profile.photo">
+
+            <h1 class="title">
+                <span id="profile.name"><strong>Jesse Ribeiro<strong></span>
+            </h1>
+
+            <button class="goal" onclick="typeWriter()">Objetivo</button>
+
+            <p id="demo"></p>
+
+            <script>
+              var i = 0;
+              var txt = 'Atuar como FrontEnd Developer';
+              var speed = 50;
+              
+              function typeWriter() {
+                if (i < txt.length) {
+                  document.getElementById("demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+            </script>
+
+            <div class="information">
+                <p class="job" id="profile.job">FrontEnd Developer na Open-SDO</p>
+                <p class="location" id="profile.location">São Paulo/SP - Brasil</p>
+                <p class="phone">
+                    <a href="tel:(11) 95914-4019" id="profile.phone" target="_blank">(11) 95914-4019</a>
+                </p>
+                <p class="email">
+                    <a href="risilva.jesse@gmail.com" id="profile.email" target="_blank">risilva.jesse@gmail.com</a>
+                </p>
+            </div>
+        </header>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Skills</h2>
+            </button>
+
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas:</h3>
+                        <ul id="profile.skills.hardSkills">
+                          <li><img src="/data/imgs/html.png" alt="HTML" title="HTML"></li>
+                          <li><img src="/data/imgs/css.png" alt="CSS" title="CSS"></li>
+                          <li><img src="data/imgs/js.png" alt="JavaScript" title="JavaScript"></li>
+                          <li><img src="data/imgs/git.png" alt="Git" title="Git"></li>
+                          <li><img src="data/imgs/github.png" alt="GitHub" title="GitHub"></li>
+                          <li><img src="data/imgs/react.png" alt="React" title="React"></li>
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>OUTROS SKILLS</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Prevenção de fraudes</li>
+                            <li>Vivência e experiência internacional</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+            </button>
+
+            <div class="content">
+                <ul class="languages" id="profile.languages">
+                    <li>Inglês (Avançado</li>
+                    <li>Árabe (Iniciante)</li>
+                    <li>Português (Nativo)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+          <button class="trigger" type="button">
+            <h2>Portfólio</h2>
+          </button>
+
+            <div class="content">
+              <ul class="portfolio" id="profile.portfolio">
+                <li>
+                    <h3 class="github">Landing Page Stranger Things - HTML, CSS & Javascript</h3>
+                    <a href="https://github.com/jesserds/stranger-things" target="_blank">https://github.com/jesserds/stranger-things</a>
+                </li>
+                <li>
+                    <h3 class="github">Space Invaders Game</h3>
+                    <a href="https://github.com/jesserds/space-invaders" target="_blank">https://github.com/jesserds/space-invaders</a>
+                </li>
+                <li>
+                    <h3 class="github">Online alarm-clock</h3>
+                    <a href="https://github.com/jesserds/web-alarm" target="_blank">https://github.com/jesserds/web-alarm</a>
+                </li>
+                <li>
+                    <h3 class="github">Jump Game</h3>
+                    <a href="https://github.com/jesserds/jump-game" target="_blank">https://github.com/jesserds/jump-game</a>
+                </li>
+                <li>
+                    <h3 class="github">Dinosaur Game</h3>
+                    <a href="https://github.com/jesserds/dinosaur-game" target="_blank">https://github.com/jesserds/dinosaur-game</a>
+                </li>
+                <li>
+                    <h3 class="github">Formulário de login animado</h3>
+                    <a href="https://github.com/jesserds/animated-login-form" target="_blank">https://github.com/jesserds/animated-login-form</a>
+                </li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Experiência Profissional</h2>
+            </button>
+
+            <div class="content">
+                <ul class="experience" id="profile.professionalExperience">
+                  <li>
+                    <h3 class="title">FrontEnd Developer voluntário<br><a href="https://www.linkedin.com/company/open-sdo/" target="_blank">@Open-SDO</a></h3>
+                    <p class="period">Abril/2022 - Atual</p>
+                    <ul>
+                      <li>Desenvolvimento de projetos, atuando em FrontEnd, em constante integração com o time o Stack de BackEnd</li>
+                      <li>Atuação em versionamento de códigos
+                      </li>
+                      <li>Atuação em HTML, CSS e Javascript
+                      </li>
+                    </ul>
+                  <li>
+                    <h3 class="title">Compliance, KYC & AML Analyst<br><a href="https://www.linkedin.com/company/citi/mycompany/verification/" target="_blank">@Citibank</a></h3>
+                    <p class="period">Abril/2022 - Atual</p>
+                    <ul>
+                      <li>Conhecimento prático dos requisitos regulatórios de AML e KYC, pesquisa analítica e conjunto de habilidades investigativas</li>
+                      <li>Verificações de antecedentes, inteligência, pesquisa de clientes e análise transacional
+                      </li>
+                      <li>Coleta e revisão de informações de fontes internas e externas para onboarding, de acordo com as políticas e procedimentos de KYC/AML
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3 class="title">Customer Security Analyst II<br><a href="https://www.linkedin.com/company/nubank/" target="_blank">@Nubank</a></h3>
+                    <p class="period">Agosto/2019 - Abril/2022</p>
+                    <ul>
+                      <li>Investigação de incidentes envolvendo  invasões de conta, roubo, sequestro, coerção, golpes, engenharia</li>
+                      <li>Responsável por todo fluxo de análise de aprovação de ajustes de valores</li>
+                      <li>Process Management: análise e monitoria de processos, para modelagem e otimização de fluxos</li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+          <button class="trigger" type="button">
+              <h2>Cursos e Certificados</h2>
+          </button>
+
+          <div class="content">
+              <ul class="curses" id="profile.Certifications">
+                <h3 class="title">Desenvolvimento Front-End do Zero ao Pro (cursando)<br><a href="https://ebaconline.com.br/about-us" target="_blank">@Ebac</a></h3>
+                <h3 class="title">Modern HTML & CSS From The Beginning (Including Sass)<br><a href="https://www.udemy.com/certificate/UC-9f769c66-a590-4293-919d-020874cd0305/" target="_blank">@Udemy</a></h3>
+                <h3 class="title">Algoritmos e Lógica de Programação<br><a href="https://www.udemy.com/certificate/UC-04f018e7-b8f1-48a5-9391-db3b1d39b466/">@Udemy</a></h3>
+                <h3 class="title">Fundamental Hacking<br><a href="https://www.linkedin.com/feed/update/urn:li:share:6801893131525611520/?utm_source=linkedin_share&utm_medium=member_desktop_share&utm_content=post" target="_blank">@HackerSec</a></h3>
+                <h3 class="title">Certificações LinkedIn Learning<br><a href="https://www.linkedin.com/in/jesseribeiro/details/certifications/" target="_blank">@LinkedIn Learning</a></h3>        
+                <h3 class="title">Quality Assurance<br><a href="https://drive.google.com/file/d/1WHLSKGN2C8_ZyOliVxAyshYJRlOBL_cv/view?usp=sharing" target="_blank">@QA.Coders</a></h3>        
+                <h3 class="title">Trilha Conectar - Discover<br><a href="https://drive.google.com/file/d/1fM8W17FihZGvSMtbY5bq9jPqpnyms5NB/view?usp=sharing" target="_blank">@Rocketseat</a></h3>        
+                <h3 class="title">Trilha Fundamentar - Discover<br><a href="https://drive.google.com/file/d/1EgyaM49-_AdZJHWbf9iRzpP4okQUqRiP/view?usp=sharing" target="_blank">@Rocketseat</a></h3>        
+                <h3 class="title">Trilha Especializar - Discover<br><a href="https://drive.google.com/file/d/1xwAPuck_KP0bcQBrsZ_bMQFOefWtYpmJ/view?usp=sharing" target="_blank">@Rocketseat</a></h3>        
+          </div>
+      </section>
+
+        <footer id="img2">
+            <a href="https://www.linkedin.com/in/jesseribeiro/" target="_blank">
+              <img src="/data/imgs/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/jesserds" target="_blank">
+              <img src="/data/imgs/github.png" alt="GitHub">
+          </a>
+            <a href="mailto:risilva.jesse@gmail.com" target="_blank">
+              <img src="/data/imgs/gmail.png" alt="Gmail">
+            </a>
+            <a href="https://wa.me/5511959144019" target="_blank">
+              <img src="/data/imgs/whatsapp.png" alt="WhatsApp" style="display:block">
+            </a>
+        </footer>
+    </main>
+
+    <script src="assets/js/acordeon.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
